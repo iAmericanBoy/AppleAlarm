@@ -12,10 +12,14 @@ class WorldClock {
     let placeName: String
     let timeZone: TimeZone
     
-    var time: Date {
+    var time: String {
         get {
-            let dateComponents = Calendar.current.dateComponents(in: timeZone, from: Date())
-            return Calendar.current.date(from: dateComponents)!
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.timeZone = timeZone
+            dateFormatter.timeStyle = .short
+
+            return dateFormatter.string(from: Date())
         }
     }
     var timeChangeDescribtion: String {
