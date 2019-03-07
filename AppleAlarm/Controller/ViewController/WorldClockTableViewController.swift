@@ -12,13 +12,14 @@ class WorldClockTableViewController: UITableViewController {
     //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-    self.navigationController?.visibleViewController?.navigationItem.leftBarButtonItem = self.editButtonItem
-        self.navigationController?.visibleViewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWorldClock))
+
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
         self.navigationController?.visibleViewController?.title = "WorldClock"
+        self.navigationController?.visibleViewController?.navigationItem.leftBarButtonItem = self.editButtonItem
+        self.navigationController?.visibleViewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWorldClock))
 
     }
 
