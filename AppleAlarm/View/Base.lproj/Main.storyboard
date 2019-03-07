@@ -14,7 +14,7 @@
             <objects>
                 <tabBarController id="YiA-JS-cvy" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lEQ-f7-Aea"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZOr-XO-oZH">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="ZOr-XO-oZH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,7 +51,7 @@
         <scene sceneID="se6-3F-mp1">
             <objects>
                 <viewControllerPlaceholder storyboardName="WorldClock" id="89Q-cT-A0Z" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="vN5-eW-73v"/>
+                    <tabBarItem key="tabBarItem" title="WorldClock" id="vN5-eW-73v"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aA4-We-Ea6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +61,7 @@
         <scene sceneID="MsG-FU-fNR">
             <objects>
                 <viewControllerPlaceholder storyboardName="Alarm" id="sNn-AL-QVs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="S5K-87-Kgz"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" id="S5K-87-Kgz"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k6h-cY-iSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +71,7 @@
         <scene sceneID="9F1-M0-94f">
             <objects>
                 <viewControllerPlaceholder storyboardName="BedTime" id="8NM-KG-GnI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="fjI-uO-ugl"/>
+                    <tabBarItem key="tabBarItem" title="BedTime" id="fjI-uO-ugl"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDA-h2-lp2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,7 +81,7 @@
         <scene sceneID="ubH-7W-9Ym">
             <objects>
                 <viewControllerPlaceholder storyboardName="StopWatch" id="lnP-gP-sQ2" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0tR-kB-amh"/>
+                    <tabBarItem key="tabBarItem" title="StopWatch" id="0tR-kB-amh"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4op-68-qjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +91,7 @@
         <scene sceneID="f04-k9-tbm">
             <objects>
                 <viewControllerPlaceholder storyboardName="Timer" id="Hr6-4v-XSL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="SM0-WX-bOQ"/>
+                    <tabBarItem key="tabBarItem" title="Timer" id="SM0-WX-bOQ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ok-WE-KfZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
