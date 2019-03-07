@@ -23,6 +23,7 @@ class WorldClockController {
         let chicago = WorldClock(placeName: "Chicago", timeZone: TimeZone(identifier: "America/Chicago")!)
         let dc = WorldClock(placeName: "DC", timeZone: TimeZone(identifier: "America/New_York")!)
         let tokyo = WorldClock(placeName: "Tokyo", timeZone: TimeZone(identifier: "Asia/Tokyo")!)
-        allWorldClocks += [munich,chicago,dc,tokyo]
+        let cupertino = WorldClock(placeName: "Cupertino", timeZone: TimeZone(identifier: "America/Los_Angeles")!)
+        allWorldClocks += [munich,chicago, cupertino,dc,tokyo]
     }
 }
