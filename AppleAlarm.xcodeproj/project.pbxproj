@@ -19,6 +19,7 @@
 		B620048F22319BAD00C319B3 /* WorldClockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620048E22319BAD00C319B3 /* WorldClockTableViewController.swift */; };
 		B620049122319BD800C319B3 /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620049022319BD800C319B3 /* WorldClockTableViewCell.swift */; };
 		B620049322319D1700C319B3 /* WorldClockListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620049222319D1700C319B3 /* WorldClockListTableViewController.swift */; };
+		B620049522319F7C00C319B3 /* WoldClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620049422319F7C00C319B3 /* WoldClock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		B620048E22319BAD00C319B3 /* WorldClockTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewController.swift; sourceTree = "<group>"; };
 		B620049022319BD800C319B3 /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
 		B620049222319D1700C319B3 /* WorldClockListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockListTableViewController.swift; sourceTree = "<group>"; };
+		B620049422319F7C00C319B3 /* WoldClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoldClock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				B620048E22319BAD00C319B3 /* WorldClockTableViewController.swift */,
 				B620049022319BD800C319B3 /* WorldClockTableViewCell.swift */,
 				B620049222319D1700C319B3 /* WorldClockListTableViewController.swift */,
+				B620049422319F7C00C319B3 /* WoldClock.swift */,
 			);
 			path = AppleAlarm;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B620049122319BD800C319B3 /* WorldClockTableViewCell.swift in Sources */,
+				B620049522319F7C00C319B3 /* WoldClock.swift in Sources */,
 				B620049322319D1700C319B3 /* WorldClockListTableViewController.swift in Sources */,
 				B620046922318A0E00C319B3 /* AppDelegate.swift in Sources */,
 				B620048F22319BAD00C319B3 /* WorldClockTableViewController.swift in Sources */,
