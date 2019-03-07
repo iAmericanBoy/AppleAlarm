@@ -7,8 +7,25 @@
 //
 
 import Foundation
-struct WorldClock {
+
+class WorldClock {
     let placeName: String
-    let time: Date
-    let timeChangeDescribtion: String
+    let timeZone: TimeZone
+    
+    var time: Date {
+        get {
+            let dateComponents = Calendar.current.dateComponents(in: timeZone, from: Date())
+            return Calendar.current.date(from: dateComponents)!
+        }
+    }
+    var timeChangeDescribtion: String {
+        get {
+            return Calendar.current.dateComponents([.timeZone], from: time).description
+        }
+    }
+    
+    init(placeName: String, timeZone: TimeZone) {
+        self.placeName = placeName
+        self.timeZone = timeZone
+    }
 }

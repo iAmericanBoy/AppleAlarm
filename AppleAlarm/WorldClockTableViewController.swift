@@ -12,18 +12,20 @@ class WorldClockTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.rightBarButtonItem = self.editButtonItem
+    self.navigationController?.visibleViewController?.navigationItem.leftBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return WorldClockController.shared.allWorldClocks.count
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "worldClockCell", for: indexPath)
-
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "worldClockCell", for: indexPath) as? WorldClockTableViewCell
+        
+        cell?.worldClock = WorldClockController.shared.allWorldClocks[indexPath.row]
+        
+        return cell ?? UITableViewCell()
     }
 
     
