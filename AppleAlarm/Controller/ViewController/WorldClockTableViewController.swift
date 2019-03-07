@@ -9,21 +9,28 @@
 import UIKit
 
 class WorldClockTableViewController: UITableViewController {
-
+    //MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
     self.navigationController?.visibleViewController?.navigationItem.leftBarButtonItem = self.editButtonItem
+        self.navigationController?.visibleViewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addWorldClock))
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+        self.navigationController?.visibleViewController?.title = "WorldClock"
+
     }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return WorldClockController.shared.allWorldClocks.count
+        return WorldClockController.shared.selectedWorldClock.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "worldClockCell", for: indexPath) as? WorldClockTableViewCell
         
-        cell?.worldClock = WorldClockController.shared.allWorldClocks[indexPath.row]
+        cell?.worldClock = WorldClockController.shared.selectedWorldClock[indexPath.row]
         
         return cell ?? UITableViewCell()
     }
@@ -37,8 +44,14 @@ class WorldClockTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            // Delete the row from the data source
+            let worldClock = WorldClockController.shared.selectedWorldClock.remove(at: indexPath.row)
+            WorldClockController.shared.allWorldClocks.append(worldClock)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
+    }
+    
+    //MARK: - Private Functions
+    @objc func addWorldClock() {
+        self.navigationController?.pushViewController(UIStoryboard.init(name: "WorldClock", bundle: nil).instantiateViewController(withIdentifier: "WorldClockList"), animated: true)
     }
 }

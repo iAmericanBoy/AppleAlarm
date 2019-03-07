@@ -12,27 +12,19 @@ class AlarmTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateViews()
-        setTabBarTitles()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        updateViews()
     }
     
     func updateViews() {
         self.navigationController?.visibleViewController?.title = "Alarm"
+
         self.navigationController?.visibleViewController?.navigationItem.leftBarButtonItem = self.editButtonItem
         self.navigationController?.visibleViewController?.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addButtonTapped))
         
-    }
-    
-    func setTabBarTitles() {
-        self.tabBarController?.tabBar.items![0].title = "World Clock"
-        self.tabBarController?.tabBar.items![1].title = "Alarm"
-        self.tabBarController?.tabBar.items![2].title = "Bedtime"
-        self.tabBarController?.tabBar.items![3].title = "Stopwatch"
-        self.tabBarController?.tabBar.items![4].title = "Timer"
     }
     
     @objc func addButtonTapped() {
