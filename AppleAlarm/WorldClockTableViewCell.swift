@@ -25,7 +25,14 @@ class WorldClockTableViewCell: UITableViewCell {
     func updateViews() {
         guard let worldClock = worldClock else {return}
         placeLabel.text = worldClock.placeName
-        timeLabel.text = "\(worldClock.time)"
+        
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .short
+        
+        timeLabel.text = dateFormatter.string(from:worldClock.time)
+        
+        print(worldClock.timeChangeDescribtion)
         timeChangeLabel.text = worldClock.timeChangeDescribtion
     }
 }

@@ -20,7 +20,7 @@ class WorldClock {
     }
     var timeChangeDescribtion: String {
         get {
-            return Calendar.current.dateComponents([.timeZone], from: time).description
+            return timeZone.abbreviation()!
         }
     }
     
