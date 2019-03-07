@@ -24,6 +24,7 @@
 		B62004A42231CAD700C319B3 /* WorldClockListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62004A12231CAD700C319B3 /* WorldClockListTableViewController.swift */; };
 		B62004A52231CAD700C319B3 /* WorldClockTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62004A22231CAD700C319B3 /* WorldClockTableViewController.swift */; };
 		B62004A72231CAE100C319B3 /* WorldClockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62004A62231CAE100C319B3 /* WorldClockController.swift */; };
+		B62004A92231CC0000C319B3 /* WoldClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62004A82231CBFF00C319B3 /* WoldClock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		B62004A12231CAD700C319B3 /* WorldClockListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockListTableViewController.swift; sourceTree = "<group>"; };
 		B62004A22231CAD700C319B3 /* WorldClockTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewController.swift; sourceTree = "<group>"; };
 		B62004A62231CAE100C319B3 /* WorldClockController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorldClockController.swift; sourceTree = "<group>"; };
+		B62004A82231CBFF00C319B3 /* WoldClock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoldClock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 		B62004992231C30800C319B3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B62004A82231CBFF00C319B3 /* WoldClock.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				B620049F2231CAB400C319B3 /* AlarmTableViewController.swift in Sources */,
 				B620049D2231C37900C319B3 /* MainTabBarController.swift in Sources */,
 				B62004A32231CAD700C319B3 /* WorldClockTableViewCell.swift in Sources */,
+				B62004A92231CC0000C319B3 /* WoldClock.swift in Sources */,
 				B620046922318A0E00C319B3 /* AppDelegate.swift in Sources */,
 				3F7FC2AC2231BB6300EC2E92 /* StopWatchTableViewController.swift in Sources */,
 				B62004A72231CAE100C319B3 /* WorldClockController.swift in Sources */,
