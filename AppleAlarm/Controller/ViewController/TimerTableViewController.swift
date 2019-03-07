@@ -16,12 +16,12 @@ class TimerTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateViews()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.visibleViewController?.title = "Timer"
+        updateViews()
     }
     
     func updateViews() {

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F7FC2AC2231BB6300EC2E92 /* StopWatchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FC2AB2231BB6300EC2E92 /* StopWatchTableViewController.swift */; };
 		3F7FC2AE2231C34100EC2E92 /* TimerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FC2AD2231C34100EC2E92 /* TimerTableViewController.swift */; };
+		3F7FC2B02231CE8800EC2E92 /* BedtimeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7FC2AF2231CE8800EC2E92 /* BedtimeTableViewController.swift */; };
 		B620046922318A0E00C319B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620046822318A0E00C319B3 /* AppDelegate.swift */; };
 		B620046E22318A0E00C319B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B620046C22318A0E00C319B3 /* Main.storyboard */; };
 		B620047022318A1300C319B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B620046F22318A1300C319B3 /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		3F7FC2AB2231BB6300EC2E92 /* StopWatchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchTableViewController.swift; sourceTree = "<group>"; };
 		3F7FC2AD2231C34100EC2E92 /* TimerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewController.swift; sourceTree = "<group>"; };
+		3F7FC2AF2231CE8800EC2E92 /* BedtimeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeTableViewController.swift; sourceTree = "<group>"; };
 		B620046522318A0E00C319B3 /* AppleAlarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleAlarm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B620046822318A0E00C319B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B620046D22318A0E00C319B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,7 +87,6 @@
 				B62004982231C2EF00C319B3 /* Controller */,
 				B620047B22318A3F00C319B3 /* View */,
 				B620047A22318A3200C319B3 /* Resourses */,
-				3F7FC2AD2231C34100EC2E92 /* TimerTableViewController.swift */,
 			);
 			path = AppleAlarm;
 			sourceTree = "<group>";
@@ -93,7 +94,6 @@
 		B620047A22318A3200C319B3 /* Resourses */ = {
 			isa = PBXGroup;
 			children = (
-				3F7FC2AB2231BB6300EC2E92 /* StopWatchTableViewController.swift */,
 				B620046F22318A1300C319B3 /* Assets.xcassets */,
 				B620047122318A1300C319B3 /* LaunchScreen.storyboard */,
 				B620047422318A1300C319B3 /* Info.plist */,
@@ -142,6 +142,9 @@
 		B620049B2231C32C00C319B3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				3F7FC2AD2231C34100EC2E92 /* TimerTableViewController.swift */,
+				3F7FC2AB2231BB6300EC2E92 /* StopWatchTableViewController.swift */,
+				3F7FC2AF2231CE8800EC2E92 /* BedtimeTableViewController.swift */,
 				B620049E2231CAB400C319B3 /* AlarmTableViewController.swift */,
 				B62004A12231CAD700C319B3 /* WorldClockListTableViewController.swift */,
 				B62004A02231CAD700C319B3 /* WorldClockTableViewCell.swift */,
@@ -235,6 +238,7 @@
 				B62004A32231CAD700C319B3 /* WorldClockTableViewCell.swift in Sources */,
 				B62004A92231CC0000C319B3 /* WoldClock.swift in Sources */,
 				B620046922318A0E00C319B3 /* AppDelegate.swift in Sources */,
+				3F7FC2B02231CE8800EC2E92 /* BedtimeTableViewController.swift in Sources */,
 				3F7FC2AC2231BB6300EC2E92 /* StopWatchTableViewController.swift in Sources */,
 				B62004A72231CAE100C319B3 /* WorldClockController.swift in Sources */,
 			);
@@ -407,7 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6B8ZX28ZW;
+				DEVELOPMENT_TEAM = 3LYU528328;
 				INFOPLIST_FILE = "$(SRCROOT)/AppleAlarm/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -425,7 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = J6B8ZX28ZW;
+				DEVELOPMENT_TEAM = 3LYU528328;
 				INFOPLIST_FILE = "$(SRCROOT)/AppleAlarm/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

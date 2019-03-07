@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Timer-->
         <scene sceneID="tha-b7-o4l">
             <objects>
                 <tableViewController id="ILE-K2-fJw" customClass="TimerTableViewController" customModule="AppleAlarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -98,7 +98,8 @@
                             <outlet property="delegate" destination="ILE-K2-fJw" id="Da7-hT-Y1K"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="RZl-75-s3r"/>
+                    <tabBarItem key="tabBarItem" title="Timer" id="EnJ-Ds-iu0"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="cancelButton" destination="id5-aZ-oJ7" id="XJI-YU-L16"/>
                         <outlet property="startButton" destination="ZSZ-Nz-jfo" id="boj-bs-msZ"/>

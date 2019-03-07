@@ -6,10 +6,11 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Stopwatch-->
         <scene sceneID="3Ct-sb-r8S">
             <objects>
                 <tableViewController id="UJ6-CE-S8i" customClass="StopWatchTableViewController" customModule="AppleAlarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +79,8 @@
                             <outlet property="delegate" destination="UJ6-CE-S8i" id="4r3-s5-Dxp"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="y9e-Ea-Ui9"/>
+                    <tabBarItem key="tabBarItem" title="Stopwatch" id="naY-r9-Cbb"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="lapButton" destination="ddk-cX-LFv" id="HuL-Fw-Ty9"/>
                         <outlet property="startButton" destination="t91-Gz-Bkx" id="mpW-E0-0Xv"/>
@@ -113,6 +115,7 @@
                             <constraint firstItem="LMA-Qs-ZdO" firstAttribute="centerY" secondItem="4f2-cG-QAw" secondAttribute="centerY" id="qZb-tj-7AL"/>
                             <constraint firstItem="LMA-Qs-ZdO" firstAttribute="leading" secondItem="4f2-cG-QAw" secondAttribute="leadingMargin" constant="8" id="z5e-IE-jWF"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="J22-4n-8L6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3vc-lG-uE1" userLabel="First Responder" sceneMemberID="firstResponder"/>

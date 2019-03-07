@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Alarm-->
         <scene sceneID="ggn-Ce-c4Z">
             <objects>
                 <tableViewController id="Uh6-AP-2Id" customClass="AlarmTableViewController" customModule="AppleAlarm" customModuleProvider="target" sceneMemberID="viewController">
@@ -80,7 +80,8 @@
                             <outlet property="delegate" destination="Uh6-AP-2Id" id="1gL-L8-km1"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="9Om-8x-ey5"/>
+                    <tabBarItem key="tabBarItem" title="Alarm" id="apL-J7-7Pw"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hg8-LU-zdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
