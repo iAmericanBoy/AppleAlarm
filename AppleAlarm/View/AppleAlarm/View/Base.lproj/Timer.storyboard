@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ILE-K2-fJw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="tha-b7-o4l">
+            <objects>
+                <tableViewController id="ILE-K2-fJw" customClass="TimerTableViewController" customModule="AppleAlarm" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="uzR-7H-j5t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="Mlb-Nh-QQg">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="BD5-pg-Buc">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="147"/>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="573686134.37413597">
+                                        <!--2019-03-07 21:15:34 +0000-->
+                                    </date>
+                                </datePicker>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="BD5-pg-Buc" secondAttribute="trailing" id="KH9-Pb-byy"/>
+                                <constraint firstItem="BD5-pg-Buc" firstAttribute="top" secondItem="Mlb-Nh-QQg" secondAttribute="top" id="R1z-oe-cUJ"/>
+                                <constraint firstAttribute="bottom" secondItem="BD5-pg-Buc" secondAttribute="bottom" id="qBx-q0-5hU"/>
+                                <constraint firstItem="BD5-pg-Buc" firstAttribute="leading" secondItem="Mlb-Nh-QQg" secondAttribute="leading" id="qmc-RB-99e"/>
+                            </constraints>
+                        </view>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="6J6-63-Spq">
+                            <rect key="frame" x="0.0" y="219" width="375" height="359"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id5-aZ-oJ7">
+                                    <rect key="frame" x="8" y="149.5" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="qlu-Gp-MdL"/>
+                                        <constraint firstAttribute="height" constant="60" id="wIX-mo-c9s"/>
+                                    </constraints>
+                                    <state key="normal" title="Cancel"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSZ-Nz-jfo">
+                                    <rect key="frame" x="307" y="149.5" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="60" id="byI-j0-cVf"/>
+                                        <constraint firstAttribute="height" constant="60" id="pc5-gv-Zr0"/>
+                                    </constraints>
+                                    <state key="normal" title="Start"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="id5-aZ-oJ7" firstAttribute="centerY" secondItem="6J6-63-Spq" secondAttribute="centerY" id="K5Y-fk-fGk"/>
+                                <constraint firstAttribute="trailing" secondItem="ZSZ-Nz-jfo" secondAttribute="trailing" constant="8" id="avV-S6-mKp"/>
+                                <constraint firstItem="id5-aZ-oJ7" firstAttribute="leading" secondItem="6J6-63-Spq" secondAttribute="leading" constant="8" id="nqf-WB-Zl9"/>
+                                <constraint firstItem="ZSZ-Nz-jfo" firstAttribute="centerY" secondItem="6J6-63-Spq" secondAttribute="centerY" id="vdD-AJ-Zzy"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="timerCell" textLabel="Jk2-pF-06i" detailTextLabel="h5y-Ot-1qu" style="IBUITableViewCellStyleValue1" id="l1a-dO-7p2">
+                                <rect key="frame" x="0.0" y="175" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l1a-dO-7p2" id="tyi-OV-Bva">
+                                    <rect key="frame" x="0.0" y="0.0" width="341" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="When Timer Ends" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jk2-pF-06i">
+                                            <rect key="frame" x="16" y="12" width="135.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Radar" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h5y-Ot-1qu">
+                                            <rect key="frame" x="295" y="12" width="45" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="ILE-K2-fJw" id="JPz-uu-wOu"/>
+                            <outlet property="delegate" destination="ILE-K2-fJw" id="Da7-hT-Y1K"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="RZl-75-s3r"/>
+                    <connections>
+                        <outlet property="cancelButton" destination="id5-aZ-oJ7" id="XJI-YU-L16"/>
+                        <outlet property="startButton" destination="ZSZ-Nz-jfo" id="boj-bs-msZ"/>
+                        <outlet property="timePicker" destination="BD5-pg-Buc" id="FMk-9y-IBb"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D0G-nL-2Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>
