@@ -11,6 +11,8 @@
 		B620046E22318A0E00C319B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B620046C22318A0E00C319B3 /* Main.storyboard */; };
 		B620047022318A1300C319B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B620046F22318A1300C319B3 /* Assets.xcassets */; };
 		B620047322318A1300C319B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B620047122318A1300C319B3 /* LaunchScreen.storyboard */; };
+		B620047E223194E700C319B3 /* WorldClock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B620047C223194E700C319B3 /* WorldClock.storyboard */; };
+		B62004802231950700C319B3 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B620047F2231950700C319B3 /* Alarm.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		B620046F22318A1300C319B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B620047222318A1300C319B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B620047422318A1300C319B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B620047D223194E700C319B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AppleAlarm/View/Base.lproj/WorldClock.storyboard; sourceTree = "<group>"; };
+		B620047F2231950700C319B3 /* Alarm.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 		B620047B22318A3F00C319B3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B620047C223194E700C319B3 /* WorldClock.storyboard */,
+				B620047F2231950700C319B3 /* Alarm.storyboard */,
 				B620046C22318A0E00C319B3 /* Main.storyboard */,
 			);
 			path = View;
@@ -135,8 +141,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B620047E223194E700C319B3 /* WorldClock.storyboard in Resources */,
 				B620047322318A1300C319B3 /* LaunchScreen.storyboard in Resources */,
 				B620047022318A1300C319B3 /* Assets.xcassets in Resources */,
+				B62004802231950700C319B3 /* Alarm.storyboard in Resources */,
 				B620046E22318A0E00C319B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,6 +177,14 @@
 				B620047222318A1300C319B3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B620047C223194E700C319B3 /* WorldClock.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B620047D223194E700C319B3 /* Base */,
+			);
+			name = WorldClock.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
