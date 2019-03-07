@@ -24,41 +24,12 @@
                         <segue destination="89Q-cT-A0Z" kind="relationship" relationship="viewControllers" id="5yM-LR-XOv"/>
                         <segue destination="GJh-gg-q0P" kind="relationship" relationship="viewControllers" id="zVy-aL-79V"/>
                         <segue destination="UJ6-CE-S8i" kind="relationship" relationship="viewControllers" id="mIY-3o-BM0"/>
-                        <segue destination="Uh6-AP-2Id" kind="relationship" relationship="viewControllers" id="p6a-c3-e82"/>
+                        <segue destination="sNn-AL-QVs" kind="relationship" relationship="viewControllers" id="p6a-c3-e82"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R3o-h9-z8i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-817" y="-439"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="ggn-Ce-c4Z">
-            <objects>
-                <tableViewController id="Uh6-AP-2Id" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="C3z-sM-KAU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="RfQ-Hw-bIY">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RfQ-Hw-bIY" id="EbG-EK-2h5">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="Uh6-AP-2Id" id="9O5-So-A4N"/>
-                            <outlet property="delegate" destination="Uh6-AP-2Id" id="1gL-L8-km1"/>
-                        </connections>
-                    </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="9Om-8x-ey5"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hg8-LU-zdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2388" y="-1953"/>
         </scene>
         <!--Item-->
         <scene sceneID="Kos-XH-6E1">
@@ -172,6 +143,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aA4-We-Ea6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2388" y="-2660"/>
+        </scene>
+        <!--Alarm-->
+        <scene sceneID="MsG-FU-fNR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Alarm" id="sNn-AL-QVs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="S5K-87-Kgz"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k6h-cY-iSN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2388" y="-1953"/>
         </scene>
     </scenes>
 </document>
