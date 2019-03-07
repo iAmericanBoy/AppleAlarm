@@ -42,7 +42,8 @@ class WorldClockTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            WorldClockController.shared.selectedWorldClock.remove(at: indexPath.row)
+            let worldClock = WorldClockController.shared.selectedWorldClock.remove(at: indexPath.row)
+            WorldClockController.shared.allWorldClocks.append(worldClock)
             tableView.deleteRows(at: [indexPath], with: .fade)
         }
     }

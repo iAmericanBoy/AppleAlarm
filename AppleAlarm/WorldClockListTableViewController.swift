@@ -30,6 +30,7 @@ class WorldClockListTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let worldClock = WorldClockController.shared.allWorldClocks[indexPath.row]
         WorldClockController.shared.selectedWorldClock.append(worldClock)
+        WorldClockController.shared.allWorldClocks.remove(at: indexPath.row)
         self.navigationController?.popViewController(animated: true)
     }
 }
