@@ -16,12 +16,20 @@ class WorldClockListTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return WorldClockController.shared.allWorldClocks.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath)
 
+        cell.textLabel?.text = WorldClockController.shared.allWorldClocks[indexPath.row].placeName
         return cell
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let worldClock = WorldClockController.shared.allWorldClocks[indexPath.row]
+        WorldClockController.shared.selectedWorldClock.append(worldClock)
+        self.navigationController?.popViewController(animated: true)
     }
 }
