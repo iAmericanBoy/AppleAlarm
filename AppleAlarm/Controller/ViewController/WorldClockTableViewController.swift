@@ -18,6 +18,8 @@ class WorldClockTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+        self.navigationController?.visibleViewController?.title = "WorldClock"
+
     }
 
     // MARK: - Table view data source
