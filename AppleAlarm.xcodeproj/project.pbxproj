@@ -22,6 +22,7 @@
 		B620049322319D1700C319B3 /* WorldClockListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620049222319D1700C319B3 /* WorldClockListTableViewController.swift */; };
 		B620049522319F7C00C319B3 /* WoldClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620049422319F7C00C319B3 /* WoldClock.swift */; };
 		B62004972231A09000C319B3 /* WorldClockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62004962231A09000C319B3 /* WorldClockController.swift */; };
+		B620049D2231C37900C319B3 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B620049C2231C37900C319B3 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		B620049222319D1700C319B3 /* WorldClockListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockListTableViewController.swift; sourceTree = "<group>"; };
 		B620049422319F7C00C319B3 /* WoldClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoldClock.swift; sourceTree = "<group>"; };
 		B62004962231A09000C319B3 /* WorldClockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockController.swift; sourceTree = "<group>"; };
+		B620049C2231C37900C319B3 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		B620049B2231C32C00C319B3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B620049C2231C37900C319B3 /* MainTabBarController.swift */,
 				3F7FC2A922319D0D00EC2E92 /* AlarmTableViewController.swift */,
 				B620048E22319BAD00C319B3 /* WorldClockTableViewController.swift */,
 				B620049022319BD800C319B3 /* WorldClockTableViewCell.swift */,
@@ -220,6 +223,7 @@
 			files = (
 				B620049122319BD800C319B3 /* WorldClockTableViewCell.swift in Sources */,
 				B620049522319F7C00C319B3 /* WoldClock.swift in Sources */,
+				B620049D2231C37900C319B3 /* MainTabBarController.swift in Sources */,
 				B620049322319D1700C319B3 /* WorldClockListTableViewController.swift in Sources */,
 				B620046922318A0E00C319B3 /* AppDelegate.swift in Sources */,
 				3F7FC2AA22319D0D00EC2E92 /* AlarmTableViewController.swift in Sources */,
@@ -395,7 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3LYU528328;
+				DEVELOPMENT_TEAM = J6B8ZX28ZW;
 				INFOPLIST_FILE = "$(SRCROOT)/AppleAlarm/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3LYU528328;
+				DEVELOPMENT_TEAM = J6B8ZX28ZW;
 				INFOPLIST_FILE = "$(SRCROOT)/AppleAlarm/Resourses/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="gRs-kK-akW">
             <objects>
-                <tabBarController id="YiA-JS-cvy" sceneMemberID="viewController">
+                <tabBarController id="YiA-JS-cvy" customClass="MainTabBarController" customModule="AppleAlarm" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="lEQ-f7-Aea"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="ZOr-XO-oZH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -35,7 +35,7 @@
         <scene sceneID="IJd-17-fsD">
             <objects>
                 <navigationController id="U3f-tt-jyz" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Vqm-ue-Hte">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="Vqm-ue-Hte">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
